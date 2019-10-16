@@ -1,0 +1,354 @@
+<html>
+<head>
+<title>Glory</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/demo.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/sticky-navigation.css" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+		
+<script>
+$(function() {
+	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+	
+	var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop();
+		if (scroll_top > sticky_navigation_offset_top) { 
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		} else {
+			$('#sticky_navigation').css({ 'position': 'relative' }); 
+		}   
+	};
+	sticky_navigation();
+	$(window).scroll(function() {
+		 sticky_navigation();
+	});
+	$('a[href="#"]').click(function(event){ 
+		event.preventDefault(); 
+	});
+	
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,900,800,700,600,500,300,100' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div id="demo_top_wrapper">
+	<div id="demo_top">
+			<div class="header" id="home">
+				<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=""/></a>
+				</div>
+			</div>
+		
+	 </div>
+	 <div id="sticky_navigation_wrapper">
+		 <div id="sticky_navigation">
+			  <div class="top-menu">
+				 <div class="container">
+						<a href="#home"><h4>Glory</h4></a>
+						<span class="menu"> </span>
+						<ul>
+						<li><a class="scroll" href="#about">ABOUT</a></li>
+						<li><a class="scroll" href="#vacancies">VACANCIES</a></li>
+						<li><a class="scroll" href="#clients">CLIENTS</a></li>
+						<li><a class="scroll" href="#contact">CONTACT</a></li>
+						<a href="#"><span class="img1"> </span></a>
+						<a href="#"><span class="img2"> </span></a>
+						<a href="#"><span class="img3"> </span></a>				 
+						<div class="clearfix"></div>
+						</ul>
+					 <div class="clearfix"></div>
+				 </div>
+			  </div>
+		 </div>
+	 </div>
+</div>
+
+<section id="main">
+<div class="about" id="about">
+	 <h3>WELCOME TO OUR WORLD</h3>
+	 <b></b>
+	 <div class="container">
+		 <div class="about-grids">
+			 <div class="col-md-6 about-info">		
+				 <h4>Short Description</h4>
+				  <label></label>
+				 <p>
+				 For centuries people have waged war. Many wars took away many good people. 
+				 Fathers left families, husbands left loved ones, the color of the nation perished.
+				 But not now.
+				 We offer you upscale troops. 
+				 Each soldier is trained personally under you, only today discounts up to 50%!
+				 </p>
+			 </div> 
+			 <div class="col-md-6 about-skill">
+				 <h4>Skills</h4>
+				  <label></label>
+				  <p><i>Every unit must prove to be a professional. Therefore, everyone learns not only the art of war as its standard</i></p>
+					<div class="skill-grid1">
+						 <div class="skill-bar">
+						 <div class="info"><p>WRITING</p><i>70%</i></div>						 
+						 </div>
+						 <div class="icon"><img src="images/skil.png"></div>
+						 <div class="clearfix"></div>
+					 </div>
+					 <div class="clearfix"></div>
+					 <div class="skill-grid2">
+						 <div class="skill-bar2">
+						 <div class="info2"><p>THE INCONVENIENCE</p><i>90%</i></div>
+						 <div class="clearfix"></div>
+						 </div>
+						 <div class="icon"><img src="images/skil.png"></div>
+						 <div class="clearfix"></div>
+					 </div>
+					 <div class="clearfix"></div>
+					 <div class="skill-grid2">
+						 <div class="skill-bar2">
+						 <div class="info3"><p>FIGHTING</p><i>90%</i></div>
+						 <div class="clearfix"></div>
+						 </div>
+						 <div class="icon"><img src="images/skil.png"></div>
+						 <div class="clearfix"></div>
+					 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>			 
+	 </div>
+	  <a></a>
+</div>	
+
+<div class="blog" id="vacancies">
+	 <h3>OUR TROOPS</h3>
+	 <small></small>
+	 <p><i>Emperors! Choose the troops you will go with to battle with whom you will reach your glory!</i></p>
+	 <div class="container">	
+		 <div class="blog-top" id="top-sec">
+			 <div class="blog-img">
+				<img src="images/img1.png" alt="" class="img-responsive" />
+			 </div>
+			 <div class="img-desc">
+				 <h4>ROMAN LEGIONS</h4>
+				 <span></span>
+				 <p>
+				 High discipline
+				 Strong will
+				 That's what a legionnaire can accommodate.
+				 Every soldier understands that he is following a strong leader and this is his greatest reward
+				 </p>
+				 <span></span>
+				 <div class="icons">
+						<a href="#"><span class="img1"> </span></a>
+						<a href="#"><span class="img2"> </span></a>
+						<a href="#"><span class="img3"> </span></a>
+				   </div>				
+			 </div>
+		 </div>
+		 <div class="blog-top" id="top-sec">
+			 <div class="blog-img">
+				<img src="images/img2.png" alt="" class="img-responsive" />
+			 </div>
+			 <div class="img-desc" >
+				 <h4>BARBARIANS</h4>
+				 <span></span>
+				 <p>
+				 Fearless berserkers, whose shoulders are death itself.
+				 Unconquered, they fight not for a leader but for a friend
+				 </p>
+					<span></span>
+					<div class="icons">
+						<a href="#"><span class="img1"> </span></a>
+						<a href="#"><span class="img2"> </span></a>
+						<a href="#"><span class="img3"> </span></a>
+				    </div>			
+			 </div>
+		 </div>
+		 <div class="clearfix"></div>
+		 
+		 <div class="blog-top" id="bottom-sec">		 
+			 <div class="img-desc blog-sec" >
+				<h4>GREEKS HOPLITES</h4>
+				<span></span>
+				 <p> 
+				 We went with Macedonian to India.
+				 We were the first to conquer the seas.
+				 We are citizens and warriors of our poles, we will not back down, but let us help in the battle of smiling death.
+				 </p>
+				 <span></span>
+				 <div class="icons">
+					 <a href="#"><span class="img1"> </span></a>
+					 <a href="#"><span class="img2"> </span></a>
+					 <a href="#"><span class="img3"> </span></a>
+				 </div>	
+			 </div>
+			 <div class="blog-img img-sec">
+				<img src="images/img3.png" alt="" class="img-responsive" />
+			 </div>		 
+		 </div>		 
+		 
+		 <div class="blog-top" id="bottom-sec">		 
+			 <div class="img-desc blog-sec" >
+				<h4>CARTHAGE WARIORS</h4>
+				<span></span>
+				 <p>
+				 We were once driven from our lands
+				 Once we did not have a home, and when we found it, we had to protect it
+				 Now, we are the most powerful in the whole Mediterranean sea
+				 We will fight for our home, we will fight for our freedom
+				 </p>
+				 <span></span>
+				<div class="icons">
+					 <a href="#"><span class="img1"> </span></a>
+					 <a href="#"><span class="img2"> </span></a>
+					 <a href="#"><span class="img3"> </span></a>
+				 </div>	
+			 </div>
+			 <div class="blog-img img-sec">
+				<img src="images/img4.png" alt="" class="img-responsive" />
+			 </div>		 
+		 </div>	
+		 <div class="clearfix"></div>
+			<div class="load"><a href="#">Load More</a></div>
+	 </div>
+</div>
+
+<div class="client" id="clients">
+		 <h3>WHAT THEY SAY</h3>
+		 <small></small>
+		 <script>
+		 
+		$(function () {
+		  $("#slider1").responsiveSlides({
+			 auto: true,
+			 nav: true,
+			 speed: 500,
+			 namespace: "callbacks",
+		  });
+		});
+	  </script>
+	  <div class="container2">
+			<div class="slider">
+				<ul class="rslides" id="slider1">
+				 <li>
+				 <div class="person1"></div>
+				 <div class="about-add-grid">
+				 <p>" Gods...I hate Gauls. My grandfather hated them too, even before they put out his eyes. Did you think I'd be out here on the frontier without good reason? Yes, Rome needs a strong frontier. No, Rome doesn't need unwashed barbarians at her gates! So, that's why I'm here, the leader of the Julii: to bring Roman order to stinking Gauls. Revenge? That'd be good too. This war against the Gauls won't last long, and when it's done, I've got plans. This is all about power, power in Rome. Going down that road means dealing with all my rivals: the Senate, the Greeks, those Carthaginian elephant-riders, the Scipii and the Brutii families too. After all, the man who controls Rome rules the world...and one day, I will be Emperor.</p>
+					<p>With using this site, i will became it! "</p>
+				 <a href="#"><b>Julius Caesar</b>,Rome empire</a>		 
+				 </div>
+				 <div class="clearfix"></div>
+			  </li>	
+			  <li>
+				 <div class="person2"></div>
+				 <div class="about-add-grid">
+				 <p>" The forests of Germania are dark and deep, and home to many brooding gods and malign forces. Some of this darkness, this menace, can be found in the people of the forests, men not easily tamed or turned to gentle pursuits. We are born to war, savage in battle, unforgiving of insults, implacable when feuding, and cruel in victory. Our gods are terrible and demand hideous sacrifices of men, women and children. This much, at least, the scribes of civilized lands believe to be true.</p>
+					<p> Romans take my land, my people. 
+					So i will take their lifes"</p>
+				 <a href="#"><b>Publius Quinctilius Varus</b>,Teutoburian forest</a>		 
+				 </div>
+				 <div class="clearfix"></div>
+			  </li>	
+			 </ul>		
+			</div>
+	  </div>
+</div>
+
+<div class="container">
+	 <ul id="flexiselDemo1">
+			<li>
+				<div class="biseller-column">
+				<img src="images/s1.png" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="biseller-column">
+				<img src="images/s2.png" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="biseller-column">
+				<img src="images/s3.png" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="biseller-column">
+				<img src="images/s2.png" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="biseller-column">
+				<img src="images/s1.png" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="biseller-column">
+				<img src="images/s3.png" alt="">
+				</div>
+			</li>
+		</ul>
+		<script type="text/javascript">
+		 $(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:480,
+						visibleItems: 1
+					}, 
+					landscape: { 
+						changePoint:640,
+						visibleItems: 2
+					},
+					tablet: { 
+						changePoint:768,
+						visibleItems: 3
+					}
+				}
+			});
+			
+		});
+	   </script>
+	   <script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+</div>   
+
+<div class="contact text-center" id="contact">
+	<h3>CONTACT ME</h3>
+	<i class="line"></i>
+	<p>Please contact me, if need more information about troops, or need one</p>
+	<form>
+	<input type="text" placeholder="Name" required/>
+	<input type="text" placeholder="E-mail" required/>
+	<textarea placeholder="Message"></textarea>
+	<input type="submit" value="SEND"/>
+	</form>
+</div>
+
+<div class="fotter">
+	 <div class="scale"></div>
+	 <a href=""><img src="images/ftr.logo.jpg" alt="" /></a>
+</div>
+</section>	
+</body>
+</html>
